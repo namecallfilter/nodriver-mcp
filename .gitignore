@@ -1,0 +1,60 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+.tox/
+.nox/
+.venv/
+venv/
+
+# Coverage and build output
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+dist/
+build/
+*.egg-info/
+
+# Machine-local Codex/MCP and environment configuration
+/.codex/
+/.mcp.json
+.env
+.env.*
+!.env.example
+
+# Scraper results may contain data from authenticated sessions.
+/artifacts/*
+!/artifacts/.gitkeep
+
+# User-generated scrapers can contain private queries or account data.
+/scrapers/*
+!/scrapers/.gitkeep
+!/scrapers/example_links.py
+
+# Never publish browser profiles, cookies, or exported session state.
+.browser-profile*/
+browser-profile*/
+.nodriver-profile*/
+nodriver-profile*/
+helium-profile*/
+*.cookies
+cookies*.json
+storage-state*.json
+
+# Local credentials and logs
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
